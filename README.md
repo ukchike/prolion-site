@@ -41,6 +41,26 @@ vercel --prod            # promote to production
 
 ## Before you go live — quick checklist
 - [ ] Replace the email `hello@prolion.ng` if it isn't live yet (search the file for it).
+- [ ] **Activate the consultation form** (see below) — it won't send until you add a form ID.
 - [ ] Confirm WhatsApp / LinkedIn / X / CredoTax / NEXUS links open correctly.
-- [ ] (Optional) Add a real lead-capture form (e.g. Formspree) on the "Book a consultation" button.
 - [ ] (Optional) Add an `og:image` (1200×630 PNG) for richer link previews on social.
+
+---
+
+## Activate the lead-capture form (2 minutes, free)
+
+The "Request a consultation" form is wired for **Formspree**, which emails you each
+submission — no backend or database needed.
+
+1. Go to **https://formspree.io** and create a free account.
+2. Create a new form; point its notifications to **hello@prolion.ng** (or your inbox).
+3. Formspree gives you an endpoint like `https://formspree.io/f/abcdwxyz`.
+4. Open `index.html`, find `action="https://formspree.io/f/YOUR_FORM_ID"`, and replace
+   `YOUR_FORM_ID` with your real ID (e.g. `abcdwxyz`).
+5. Redeploy. Submit a test message — it should land in your inbox, and the visitor
+   sees an on-page "Thank you" confirmation.
+
+Notes:
+- Until you swap the ID, the form shows a friendly "endpoint not set" message instead of failing silently.
+- A hidden honeypot field is already included to reduce spam.
+- The free tier covers ~50 submissions/month; paid tiers raise that if needed.
