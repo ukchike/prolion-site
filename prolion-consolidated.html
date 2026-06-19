@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prolion Integrated Services — Bookkeeping, Tax, Reporting & Advisory · Lagos</title>
+<meta name="description" content="Prolion Integrated Services is a Lagos finance practice: bookkeeping, tax returns, management accounts, financial statements, software implementation, financial modelling and business analytics for Nigerian businesses." />
+<meta property="og:title" content="Prolion Integrated Services — Finance, Tax & Reporting · Lagos" />
+<meta property="og:description" content="A complete finance and tax function for Nigerian business — from first ledger to board-ready report. Founder: Kingsley Uzoka, FMVA®, BIDA®." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3Crect%20width='40'%20height='40'%20rx='9'%20fill='%230E241C'/%3E%3Cpath%20d='M13%2028V12h7.2c3.4%200%205.6%202%205.6%205.1%200%203.2-2.2%205.2-5.7%205.2H17.4V28H13Z'%20fill='%23B58E45'/%3E%3Cpath%20d='M17.4%2018.7h2.4c1.2%200%201.9-.6%201.9-1.6%200-1-.7-1.6-1.9-1.6h-2.4v3.2Z'%20fill='%230E241C'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+/* ============================================================
+   PROLION — CONSOLIDATED (Classic premium + Advisory warmth)
+   Palette: warm grey + deep green + antique gold (+ mint warmth)
+   Type: Fraunces (display) · Jakarta (UI) · JetBrains Mono (data)
+   ============================================================ */
+:root{
+  --grey:#E8E6DF; --grey-2:#F1EFE9; --card:#FCFBF7;
+  --ink:#0E241C; --ink-2:#163228; --ink-3:#1E4135;
+  --gold:#B58E45; --gold-soft:#CDA75C; --gold-bg:#F1E7D2;
+  --green:#2C6A51; --green-2:#357E60; --green-deep:#1D4A39; --mint:#E2EDE7; --sage:#7C968B;
+  --line:rgba(14,36,28,.13); --line-soft:rgba(14,36,28,.08); --line-dk:rgba(233,229,219,.14);
+  --t-dark:#15201B; --t-mute:#52615A; --t-faint:#8A958E;
+  --t-light:#E9E5DB; --t-dim:#AEC0B6;
+  --maxw:1180px; --gutter:clamp(1.15rem,4vw,3rem); --r:20px; --r-sm:14px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --fs-h1:clamp(2.5rem,1.4rem + 5vw,4.7rem);
+  --fs-h2:clamp(1.9rem,1.3rem + 2.7vw,3.05rem);
+  --fs-lead:clamp(1.1rem,1rem + .62vw,1.36rem);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--grey);color:var(--t-dark);line-height:1.64;font-size:clamp(1rem,.97rem + .2vw,1.1rem);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+::selection{background:var(--gold);color:var(--ink)}
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.section{padding-block:clamp(3.6rem,2rem + 8vw,7rem)}
+section{scroll-margin-top:84px}
+h1,h2,h3,.serif{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.06;letter-spacing:-.015em}
+h2{font-size:var(--fs-h2)}
+.eyebrow{font-family:"JetBrains Mono",monospace;font-size:clamp(.72rem,.68rem + .25vw,.82rem);letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:"";width:1.6rem;height:1px;background:var(--gold);opacity:.75}
+.lead{font-size:var(--fs-lead);line-height:1.52;color:var(--t-mute);max-width:52ch}
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:600;font-size:.97rem;padding:.85em 1.55em;border-radius:100px;border:1.5px solid transparent;cursor:pointer;transition:transform .25s var(--ease),background .25s,color .25s,border-color .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.btn-gold{background:var(--gold);color:var(--ink);box-shadow:0 12px 30px -14px rgba(181,142,69,.6)}
+.btn-gold:hover{background:var(--gold-soft)}
+.btn-green{background:var(--green);color:#fff;box-shadow:0 12px 30px -16px rgba(44,106,81,.7)}
+.btn-green:hover{background:var(--green-deep)}
+.btn-ink{background:var(--ink);color:var(--t-light);border-color:var(--ink)}
+.btn-ink:hover{background:var(--ink-3)}
+.btn-out{border-color:var(--ink);color:var(--t-dark)}
+.btn-out:hover{background:var(--ink);color:var(--t-light)}
+.btn-ghost-dk{border-color:var(--line-dk);color:var(--t-light)}
+.btn-ghost-dk:hover{border-color:var(--gold);background:rgba(233,229,219,.06)}
+.arr{transition:transform .25s var(--ease)}.btn:hover .arr{transform:translateX(3px)}
+
+/* header */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(232,230,223,.85);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+.hdr.scrolled{border-color:var(--line);box-shadow:0 6px 24px -18px rgba(14,36,28,.5)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;height:74px}
+.brand{display:flex;align-items:center;gap:.7rem;font-family:"Fraunces";font-weight:600;font-size:1.24rem}
+.brand .mk{width:40px;height:40px;flex:none}
+.brand small{display:block;font-family:"JetBrains Mono";font-weight:400;font-size:.58rem;letter-spacing:.17em;text-transform:uppercase;color:var(--t-mute);margin-top:-2px}
+.nlinks{display:flex;gap:.3rem}
+.nlinks a{font-weight:500;font-size:.95rem;padding:.5rem .9rem;border-radius:100px;color:var(--t-mute);transition:.2s}
+.nlinks a:hover{color:var(--t-dark);background:var(--mint)}
+.ncta{display:flex;align-items:center;gap:.55rem}
+.icon-link{width:42px;height:42px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;color:var(--t-mute);transition:.2s;flex:none}
+.icon-link:hover{border-color:var(--green);color:var(--green);background:var(--mint)}
+.icon-link svg{width:19px;height:19px}
+.tgl{display:none;width:44px;height:44px;border:0;background:none;border-radius:10px;cursor:pointer;color:var(--ink)}
+.tgl svg{width:26px;height:26px}
+
+/* hero */
+.hero{background:var(--ink);color:var(--t-light);overflow:hidden;padding-block:clamp(3.5rem,2rem + 9vw,7rem);
+  background-image:radial-gradient(140% 90% at 85% -10%,rgba(181,142,69,.16),transparent 55%),repeating-linear-gradient(to bottom,transparent,transparent 47px,var(--line-dk) 47px,var(--line-dk) 48px);}
+.hgrid{display:grid;grid-template-columns:1.18fr .82fr;gap:clamp(2rem,4vw,4.5rem);align-items:center}
+.hero h1{font-size:var(--fs-h1);color:#fff;margin:1.3rem 0 0}
+.hero h1 .accent{font-style:italic;color:var(--gold);font-weight:500}
+.hero .lead{color:var(--t-dim);margin-top:1.5rem;max-width:46ch}
+.hact{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2.1rem}
+.hmeta{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:2.6rem;padding-top:1.7rem;border-top:1px solid var(--line-dk)}
+.hmeta b{display:block;font-family:"Fraunces";font-size:1.6rem;color:var(--gold);font-weight:600}
+.hmeta span{font-family:"JetBrains Mono";font-size:.74rem;letter-spacing:.06em;color:var(--t-dim);text-transform:uppercase}
+/* balancing statement signature */
+.statement{background:linear-gradient(180deg,var(--ink-2),var(--ink-3));border:1px solid var(--line-dk);border-radius:var(--r);padding:1.5rem 1.5rem 1.3rem;box-shadow:0 40px 80px -40px rgba(0,0,0,.7)}
+.st-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.1rem}
+.st-head .tag{font-family:"JetBrains Mono";font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;color:var(--sage)}
+.st-head .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(181,142,69,.18)}
+.st-row{display:flex;align-items:baseline;justify-content:space-between;padding:.62rem 0;border-bottom:1px dashed var(--line-dk);font-size:.93rem}
+.st-row .lbl{color:var(--t-dim)}
+.st-row .val{font-family:"JetBrains Mono";color:var(--t-light);font-weight:500}
+.st-row.total{border-bottom:0;margin-top:.5rem;padding-top:.9rem;border-top:1.5px solid var(--gold)}
+.st-row.total .lbl{color:#fff;font-weight:600;font-family:"Fraunces";font-size:1.05rem}
+.st-row.total .val{color:var(--gold);font-weight:700;font-size:1.1rem}
+.st-foot{display:flex;align-items:center;gap:.5rem;margin-top:1.1rem;font-size:.78rem;color:var(--sage);font-family:"JetBrains Mono"}
+.st-foot .ok{color:var(--gold)}
+
+/* trust strip */
+.trust{background:var(--grey-2);border-bottom:1px solid var(--line)}
+.trust .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.4rem 2rem;padding-block:1.5rem}
+.trust .label{font-family:"JetBrains Mono";font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--t-mute)}
+.trust ul{list-style:none;display:flex;flex-wrap:wrap;gap:.7rem}
+.trust li{font-family:"JetBrains Mono";font-size:.8rem;color:var(--t-dark);background:rgba(14,36,28,.04);border:1px solid var(--line);border-radius:100px;padding:.4rem .85rem}
+
+/* section head */
+.sh{max-width:62ch;margin-bottom:clamp(2rem,3vw,3.2rem)}
+.sh h2{margin:.9rem 0 .8rem}
+
+/* SERVICES — warm soft tiles (Advisory) with index numerals (Classic) */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--r-sm);padding:1.8rem;display:flex;flex-direction:column;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s;position:relative}
+.svc:hover{transform:translateY(-5px);box-shadow:0 28px 54px -36px rgba(14,36,28,.4);border-color:var(--gold)}
+.svc .num{position:absolute;top:1.4rem;right:1.5rem;font-family:"JetBrains Mono";font-size:.74rem;color:var(--gold);letter-spacing:.08em}
+.svc .ico{width:54px;height:54px;border-radius:16px;background:var(--mint);color:var(--green);display:grid;place-items:center;margin-bottom:1.2rem}
+.svc .ico svg{width:26px;height:26px}
+.svc:nth-child(3n+2) .ico{background:var(--gold-bg);color:var(--gold)}
+.svc h3{font-size:1.3rem;margin-bottom:.5rem;font-weight:600}
+.svc p{font-size:.92rem;color:var(--t-mute)}
+
+/* sectors strip (Advisory) */
+.sectors{background:var(--green-deep);color:var(--t-light)}
+.sectors .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.8rem 1.4rem;padding-block:1.6rem}
+.sectors .lbl{font-family:"JetBrains Mono";font-size:.72rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-soft)}
+.sectors .s{font-family:"Fraunces";font-size:1.08rem;color:#fff;opacity:.92}
+.sectors .dot{width:4px;height:4px;border-radius:50%;background:var(--gold-soft);opacity:.7}
+
+/* approach (soft light cards) */
+.appr{background:var(--grey-2)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem}
+.stp{background:var(--card);border:1px solid var(--line);border-radius:var(--r-sm);padding:1.7rem;position:relative}
+.stp .n{width:48px;height:48px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-family:"Fraunces";font-weight:600;font-size:1.3rem;margin-bottom:1rem}
+.stp:nth-child(2) .n,.stp:nth-child(4) .n{background:var(--gold)}
+.stp h3{font-size:1.2rem;margin-bottom:.45rem;font-weight:600}
+.stp p{font-size:.88rem;color:var(--t-mute)}
+
+/* software band (de-emphasized, real links) */
+.soft{background:var(--mint);border-block:1px solid var(--line)}
+.soft-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(1.6rem,3vw,3.5rem);align-items:center}
+.soft .eyebrow{color:var(--green)}.soft .eyebrow::before{background:var(--green)}
+.soft h2{font-size:clamp(1.6rem,1.2rem + 1.5vw,2.2rem)}
+.soft p.l{color:var(--t-mute);margin-top:.7rem;max-width:42ch}
+.apps{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.app{background:var(--card);border:1px solid var(--line);border-radius:var(--r-sm);padding:1.4rem;transition:transform .25s,box-shadow .25s,border-color .25s}
+.app:hover{transform:translateY(-3px);box-shadow:0 22px 44px -34px rgba(14,36,28,.4);border-color:var(--gold)}
+.app .ah{display:flex;align-items:center;gap:.6rem;margin-bottom:.6rem}
+.app .g{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-family:"JetBrains Mono";font-weight:700;font-size:.85rem;flex:none}
+.app.credo .g{background:var(--ink);color:var(--gold)}.app.nexus .g{background:var(--gold);color:var(--ink)}
+.app b{font-family:"Fraunces";font-size:1.2rem;font-weight:600}
+.app p{font-size:.86rem;color:var(--t-mute);margin-bottom:.85rem}
+.app a.l{font-family:"JetBrains Mono";font-size:.78rem;color:var(--green);font-weight:500;display:inline-flex;gap:.4rem;align-items:center}
+.app a.l:hover{color:var(--gold)}.app a.l:hover .arr{transform:translateX(3px)}
+
+/* about */
+.about{background:var(--grey)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.about-card{background:var(--ink);color:var(--t-light);border-radius:var(--r);padding:clamp(1.8rem,3vw,2.8rem);position:relative;overflow:hidden}
+.about-card::after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(181,142,69,.08);bottom:-120px;right:-100px}
+.about-card .qt{position:relative;z-index:1;font-family:"Fraunces";font-size:clamp(1.4rem,1.1rem + 1.4vw,1.95rem);line-height:1.32;color:#fff;font-weight:500}
+.about-card .qt .u{color:var(--gold);font-style:italic}
+.about-card .by{position:relative;z-index:1;margin-top:1.8rem;display:flex;align-items:center;gap:.9rem}
+.about-card .av{width:52px;height:52px;border-radius:50%;background:var(--gold);color:var(--ink);display:grid;place-items:center;font-family:"Fraunces";font-weight:700;font-size:1.3rem;flex:none}
+.about-card .by b{display:block;font-family:"Plus Jakarta Sans";font-weight:700}
+.about-card .by span{font-size:.82rem;color:var(--t-dim)}
+.about-card .creds{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.3rem}
+.about-card .creds span{font-family:"JetBrains Mono";font-size:.7rem;letter-spacing:.04em;color:var(--gold);border:1px solid var(--line-dk);border-radius:100px;padding:.32rem .7rem}
+.about-card .li{position:relative;z-index:1;display:inline-flex;align-items:center;gap:.5rem;margin-top:1.4rem;font-family:"JetBrains Mono";font-size:.8rem;color:var(--t-light);border-bottom:1px solid var(--gold);padding-bottom:2px}
+.about-card .li:hover{color:var(--gold)}.about-card .li svg{width:16px;height:16px}
+.about-list{list-style:none;display:flex;flex-direction:column;gap:1.2rem}
+.about-list li{display:flex;gap:1rem;align-items:flex-start}
+.about-list .ic{flex:none;width:42px;height:42px;border-radius:12px;background:var(--mint);color:var(--green);display:grid;place-items:center}
+.about-list b{font-family:"Fraunces";font-weight:600;font-size:1.12rem}
+.about-list p{font-size:.92rem;color:var(--t-mute);margin-top:.15rem}
+
+/* cta */
+.cta{background:var(--ink);color:var(--t-light);text-align:center;background-image:radial-gradient(120% 100% at 50% 0%,rgba(181,142,69,.14),transparent 60%)}
+.cta h2{color:#fff;max-width:20ch;margin:1rem auto 1rem}
+.cta .lead{color:var(--t-dim);margin-inline:auto;max-width:52ch}
+.ctaact{display:flex;flex-wrap:wrap;gap:.85rem;justify-content:center;margin-top:2rem}
+.ctach{display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;margin-top:2.6rem;padding-top:1.8rem;border-top:1px solid var(--line-dk)}
+.ctach a,.ctach span{font-family:"JetBrains Mono";font-size:.86rem;color:var(--t-dim);display:inline-flex;gap:.5rem;align-items:center}
+.ctach a:hover{color:var(--gold)}
+
+/* footer */
+.ft{background:#081713;color:var(--t-dim);padding-block:3rem 2rem}
+.ftgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2rem}
+.ft .brand{color:#fff}.ft .brand small{color:var(--sage)}
+.ftabout{font-size:.88rem;max-width:34ch;margin-top:1rem}
+.ftsoc{display:flex;gap:.6rem;margin-top:1.2rem}
+.ftsoc a{width:38px;height:38px;border-radius:50%;border:1px solid var(--line-dk);display:grid;place-items:center;color:var(--t-dim);transition:.2s}
+.ftsoc a:hover{border-color:var(--gold);color:var(--gold)}
+.ftsoc svg{width:17px;height:17px}
+.ftcol h4{font-family:"JetBrains Mono";font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);margin-bottom:1rem;font-weight:500}
+.ftcol ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.ftcol a{font-size:.9rem;color:var(--t-dim)}.ftcol a:hover{color:var(--gold)}
+.ftbot{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;margin-top:2.6rem;padding-top:1.6rem;border-top:1px solid var(--line-dk);font-family:"JetBrains Mono";font-size:.78rem;color:var(--sage)}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.st-row{opacity:0;transform:translateY(10px);animation:rowIn .6s var(--ease) forwards}
+.st-row:nth-child(1){animation-delay:.2s}.st-row:nth-child(2){animation-delay:.35s}.st-row:nth-child(3){animation-delay:.5s}.st-row:nth-child(4){animation-delay:.65s}.st-row.total{animation-delay:.85s}
+@keyframes rowIn{to{opacity:1;transform:none}}
+
+@media(max-width:980px){.hgrid{grid-template-columns:1fr;gap:2.5rem}.hero .lead{max-width:none}.about-grid{grid-template-columns:1fr}.soft-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.ftgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:860px){.nlinks,.ncta .btn{display:none}.tgl{display:grid;place-items:center}.svc-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.svc-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.apps{grid-template-columns:1fr}.ftgrid{grid-template-columns:1fr}.trust .wrap{flex-direction:column;align-items:flex-start}}
+.mobile{display:none;background:var(--grey-2);border-bottom:1px solid var(--line);position:sticky;top:74px;z-index:55}
+.nav.open + .mobile{display:block}
+.mobile .wrap{display:flex;flex-direction:column;padding-block:1rem 1.4rem}
+.mobile a{padding:.7rem .4rem;border-bottom:1px solid var(--line-soft);font-weight:500}
+.mobile a:last-of-type{border:0}.mobile .btn{margin-top:.8rem;justify-content:center}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal,.st-row{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="hdr" id="top">
+  <nav class="nav wrap" id="nav">
+    <a class="brand" href="#top" aria-label="Prolion home">
+      <svg class="mk" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="11" fill="#0E241C"/><rect x="1.5" y="1.5" width="37" height="37" rx="10.5" stroke="#B58E45" stroke-opacity="0.5"/><path d="M13 28V12h7.2c3.4 0 5.6 2 5.6 5.1 0 3.2-2.2 5.2-5.7 5.2H17.4V28H13Z" fill="#B58E45"/><path d="M17.4 18.7h2.4c1.2 0 1.9-.6 1.9-1.6 0-1-.7-1.6-1.9-1.6h-2.4v3.2Z" fill="#0E241C"/></svg>
+      <span>Prolion<small>Integrated Services</small></span>
+    </a>
+    <div class="nlinks"><a href="#services">Services</a><a href="#approach">How we work</a><a href="#software">Software</a><a href="#about">About</a></div>
+    <div class="ncta">
+      <a class="icon-link" href="https://www.linkedin.com/in/ukchike/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 9.5H5.67V18.5H8.34V9.5zM7 5.75a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1zM18.34 18.5V13.6c0-2.55-1.36-3.74-3.18-3.74a2.74 2.74 0 0 0-2.48 1.36h-.04V9.5H10v9h2.67v-4.45c0-1.17.22-2.31 1.68-2.31 1.43 0 1.45 1.34 1.45 2.39V18.5h2.54z"/></svg></a>
+      <a class="icon-link" href="https://x.com/uk_chike" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.53 3h3.07l-6.7 7.66L21.75 21h-6.17l-4.83-6.31L5.22 21H2.14l7.16-8.19L1.5 3h6.33l4.36 5.77L17.53 3zm-1.08 16.17h1.7L7.63 4.74H5.8l10.65 14.43z"/></svg></a>
+      <a class="icon-link" href="https://wa.me/2348026686328" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.42 5.82c0 4.54-3.7 8.24-8.25 8.24a8.23 8.23 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.25 8.24-8.25zm-3.06 4.4c-.14 0-.38.05-.58.27-.2.22-.76.75-.76 1.82 0 1.07.78 2.11.89 2.25.11.14 1.54 2.35 3.73 3.3.52.22.93.36 1.25.46.52.17 1 .14 1.37.09.42-.06 1.28-.52 1.46-1.03.18-.5.18-.94.13-1.03-.05-.09-.2-.14-.42-.25-.22-.11-1.28-.63-1.48-.7-.2-.07-.34-.11-.49.11-.14.22-.56.7-.69.85-.13.14-.25.16-.47.05-.22-.11-.92-.34-1.76-1.08-.65-.58-1.09-1.3-1.22-1.52-.13-.22-.01-.34.1-.45.1-.1.22-.25.33-.38.11-.13.14-.22.22-.36.07-.14.04-.27-.02-.38-.05-.11-.49-1.18-.67-1.61-.18-.43-.36-.37-.49-.38-.13-.01-.27-.01-.42-.01z"/></svg></a>
+      <a href="#contact" class="btn btn-gold">Book a consultation</a>
+      <button class="tgl" id="tgl" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </nav>
+  <div class="mobile" id="mob"><div class="wrap"><a href="#services">Services</a><a href="#approach">How we work</a><a href="#software">Software</a><a href="#about">About</a><a href="https://www.linkedin.com/in/ukchike/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://x.com/uk_chike" target="_blank" rel="noopener noreferrer">X · @uk_chike ↗</a><a href="https://wa.me/2348026686328" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><a href="#contact" class="btn btn-gold">Book a consultation</a></div></div>
+</header>
+
+<section class="hero">
+  <div class="wrap hgrid">
+    <div>
+      <span class="eyebrow">Finance · Tax · Reporting · Lagos, Nigeria</span>
+      <h1>The finance function your business needs — <span class="accent">from first ledger to board-ready report.</span></h1>
+      <p class="lead">Prolion Integrated Services keeps Nigerian businesses on top of their numbers: bookkeeping, tax returns, management accounts, financial modelling and analytics — handled by people who do this for a living.</p>
+      <div class="hact"><a href="#contact" class="btn btn-gold">Book a consultation <span class="arr">→</span></a><a href="#services" class="btn btn-ghost-dk">Explore our services</a></div>
+      <div class="hmeta"><div><b>10+ yrs</b><span>In practice</span></div><div><b>9</b><span>Core services</span></div><div><b>IFRS</b><span>Standard reporting</span></div></div>
+    </div>
+    <div class="statement reveal" aria-hidden="true">
+      <div class="st-head"><span class="tag">Management Accounts · FY 2025</span><span class="dot"></span></div>
+      <div class="st-row"><span class="lbl">Revenue</span><span class="val">₦ 84,250,000</span></div>
+      <div class="st-row"><span class="lbl">Cost of sales</span><span class="val">(₦ 41,180,000)</span></div>
+      <div class="st-row"><span class="lbl">Operating expenses</span><span class="val">(₦ 19,640,000)</span></div>
+      <div class="st-row"><span class="lbl">Tax provision</span><span class="val">(₦ 5,847,000)</span></div>
+      <div class="st-row total"><span class="lbl">Profit after tax</span><span class="val">₦ 17,583,000</span></div>
+      <div class="st-foot"><span class="ok">✓ Balanced</span> · <span>Prepared &amp; reconciled by Prolion</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust"><div class="wrap"><span class="label">Built on real practice</span><ul><li>CAC-registered</li><li>ICAN-aligned</li><li>NRS filings</li><li>IFRS reporting</li><li>FMVA® · BIDA®</li><li>Multi-entity</li></ul></div></div>
+
+<section class="section about" id="services" style="background:var(--grey)"><div class="wrap">
+  <div class="sh"><span class="eyebrow">What we do</span><h2>Everything your numbers need, in one relationship.</h2><p class="lead" style="max-width:62ch">No more juggling a bookkeeper here, a tax person there and a spreadsheet you don't trust. One partner across the whole finance lifecycle — from keeping the books clean to modelling your next funding round.</p></div>
+  <div class="svc-grid">
+    <div class="svc reveal"><span class="num">01</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M8 4v16M4 9h4M4 14h4"/></svg></div><h3>Bookkeeping</h3><p>Clean, current records kept month to month, so you always know where the money is — and audit season holds no surprises.</p></div>
+    <div class="svc reveal"><span class="num">02</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg></div><h3>Tax returns &amp; compliance</h3><p>CIT, VAT, WHT and PAYE prepared, computed and filed correctly with the NRS — deadlines met, penalties avoided.</p></div>
+    <div class="svc reveal"><span class="num">03</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg></div><h3>Management accounts &amp; reporting</h3><p>Periodic P&amp;L, balance sheet and cash flow that tell you how the business is really performing, month after month.</p></div>
+    <div class="svc reveal"><span class="num">04</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg></div><h3>Financial statements</h3><p>IFRS-aligned year-end accounts and notes, fit to put in front of a bank, an investor or a regulator with confidence.</p></div>
+    <div class="svc reveal"><span class="num">05</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4M7 8l3 3 4-5 3 3"/></svg></div><h3>Accounting software implementation</h3><p>Set-up, migration and training on QuickBooks, Sage, Zoho or Odoo — so your books run on a real system, not a spreadsheet.</p></div>
+    <div class="svc reveal"><span class="num">06</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 15l3-4 3 3 5-7"/></svg></div><h3>Financial modelling</h3><p>Forecasts, budgets, valuations and scenario models that stand up to scrutiny — for decisions, funding rounds and grant bids.</p></div>
+    <div class="svc reveal"><span class="num">07</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 21H4a1 1 0 0 1-1-1V3M7 14l3-3 3 2 5-6"/><rect x="16" y="3" width="5" height="4" rx="1"/></svg></div><h3>Data &amp; business analytics</h3><p>Dashboards and analysis that turn raw transactions into the few numbers that actually drive your decisions.</p></div>
+    <div class="svc reveal"><span class="num">08</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Audit &amp; tax authority support</h3><p>Pre-audit workbooks, objection letters and reconciliations built to withstand an NRS review when it comes.</p></div>
+    <div class="svc reveal"><span class="num">09</span><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/></svg></div><h3>Advisory retainers</h3><p>Your own finance team on call, every month — the full function, without the cost of hiring one.</p></div>
+  </div>
+</div></section>
+
+<div class="sectors"><div class="wrap"><span class="lbl">We work with</span><span class="s">SMEs</span><span class="dot"></span><span class="s">Construction</span><span class="dot"></span><span class="s">Manufacturing</span><span class="dot"></span><span class="s">Energy</span><span class="dot"></span><span class="s">Services</span><span class="dot"></span><span class="s">Informal sector</span></div></div>
+
+<section class="section appr" id="approach"><div class="wrap">
+  <div class="sh"><span class="eyebrow">How we work</span><h2>Calm, clear, and on your side.</h2></div>
+  <div class="steps">
+    <div class="stp reveal"><div class="n">1</div><h3>We listen &amp; review</h3><p>We learn your business and look at where the numbers, filings and systems really stand — no judgement.</p></div>
+    <div class="stp reveal"><div class="n">2</div><h3>We tidy &amp; build</h3><p>Clean books, proper IFRS-aligned statements and the right software — a foundation you can trust.</p></div>
+    <div class="stp reveal"><div class="n">3</div><h3>We report &amp; file</h3><p>Management accounts, returns and reporting delivered accurately and on time, every period.</p></div>
+    <div class="stp reveal"><div class="n">4</div><h3>We stay close</h3><p>Modelling, analytics and ongoing advice keep you ahead as the business grows.</p></div>
+  </div>
+</div></section>
+
+<section class="section soft" id="software"><div class="wrap soft-grid">
+  <div>
+    <span class="eyebrow">Also built by Prolion</span>
+    <h2 style="margin-top:.9rem">We build the software, too.</h2>
+    <p class="l">When we couldn't find tools fit for the Nigerian market, we built our own. They're part of the practice — not the whole story.</p>
+  </div>
+  <div class="apps">
+    <div class="app credo reveal"><div class="ah"><span class="g">Cx</span><b>CredoTax</b></div><p>NTA 2025 tax-compliance platform — calculate liabilities, track deadlines and avoid penalties.</p><a class="l" href="https://credotax-7c7n.vercel.app/" target="_blank" rel="noopener noreferrer">Visit CredoTax <span class="arr">↗</span></a></div>
+    <div class="app nexus reveal"><div class="ah"><span class="g">Nx</span><b>NEXUS</b></div><p>AI that turns bank statements into financial statements — built for the informal sector.</p><a class="l" href="https://nexus-app-ivory-eta.vercel.app/" target="_blank" rel="noopener noreferrer">Visit NEXUS <span class="arr">↗</span></a></div>
+  </div>
+</div></section>
+
+<section class="section about"><div class="wrap about-grid" id="about">
+  <div class="about-card reveal">
+    <p class="qt">"Good businesses shouldn't lose sleep over their books or the taxman. My job is to be the <span class="u">steady, reliable hand</span> on your numbers — all year round."</p>
+    <div class="by"><span class="av">K</span><div><b>Kingsley Uzoka</b><span>Founder · Tax &amp; Finance Practitioner</span></div></div>
+    <div class="creds"><span>FMVA®</span><span>BIDA®</span><span>10+ yrs practice</span></div>
+    <a class="li" href="https://www.linkedin.com/in/ukchike/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 9.5H5.67V18.5H8.34V9.5zM7 5.75a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1zM18.34 18.5V13.6c0-2.55-1.36-3.74-3.18-3.74a2.74 2.74 0 0 0-2.48 1.36h-.04V9.5H10v9h2.67v-4.45c0-1.17.22-2.31 1.68-2.31 1.43 0 1.45 1.34 1.45 2.39V18.5h2.54z"/></svg>Connect on LinkedIn</a>
+  </div>
+  <div>
+    <span class="eyebrow">Why Prolion</span>
+    <h2 style="margin:.9rem 0 1.4rem">Experience you can lean on.</h2>
+    <ul class="about-list">
+      <li class="reveal"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>10+ years across the lifecycle</b><p>From first ledger to full consolidation, single filings to multi-entity groups, across industries from construction to energy.</p></div></li>
+      <li class="reveal"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 15l3-4 3 3 5-7"/></svg></span><div><b>Certified in modelling &amp; analytics</b><p>FMVA® (financial modelling &amp; valuation) and BIDA® (business intelligence &amp; data analytics) — the modern skillset behind your numbers.</p></div></li>
+      <li class="reveal"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><div><b>Built for the Nigerian reality</b><p>NTA 2025, the NRS, SME cash flow and the informal sector — designed around how business actually works here.</p></div></li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="section cta" id="contact"><div class="wrap">
+  <span class="eyebrow" style="justify-content:center">Let's talk</span>
+  <h2>Ready to hand the numbers to someone you trust?</h2>
+  <p class="lead">Book a friendly, no-pressure consultation. We'll review where you stand and tell you plainly what needs doing — and what it costs.</p>
+  <div class="ctaact"><a href="mailto:hello@prolion.ng" class="btn btn-gold">Book a consultation <span class="arr">→</span></a><a href="#services" class="btn btn-ghost-dk">See all services</a></div>
+  <div class="ctach"><a href="mailto:hello@prolion.ng">✉ hello@prolion.ng</a><a href="https://wa.me/2348026686328" target="_blank" rel="noopener noreferrer">✆ WhatsApp +234 802 668 6328</a><a href="https://www.linkedin.com/in/ukchike/" target="_blank" rel="noopener noreferrer">in LinkedIn ↗</a><a href="https://x.com/uk_chike" target="_blank" rel="noopener noreferrer">𝕏 @uk_chike ↗</a><span>⌖ Lagos, Nigeria</span></div>
+</div></section>
+
+<footer class="ft"><div class="wrap">
+  <div class="ftgrid">
+    <div>
+      <a class="brand" href="#top" style="color:#fff"><svg class="mk" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="11" fill="#163228"/><rect x="1.5" y="1.5" width="37" height="37" rx="10.5" stroke="#B58E45" stroke-opacity="0.5"/><path d="M13 28V12h7.2c3.4 0 5.6 2 5.6 5.1 0 3.2-2.2 5.2-5.7 5.2H17.4V28H13Z" fill="#B58E45"/><path d="M17.4 18.7h2.4c1.2 0 1.9-.6 1.9-1.6 0-1-.7-1.6-1.9-1.6h-2.4v3.2Z" fill="#163228"/></svg><span>Prolion<small>Integrated Services</small></span></a>
+      <p class="ftabout">Bookkeeping, tax, reporting, modelling and analytics for Nigerian businesses — plus the software to make it simpler.</p>
+      <div class="ftsoc"><a href="https://www.linkedin.com/in/ukchike/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 9.5H5.67V18.5H8.34V9.5zM7 5.75a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1zM18.34 18.5V13.6c0-2.55-1.36-3.74-3.18-3.74a2.74 2.74 0 0 0-2.48 1.36h-.04V9.5H10v9h2.67v-4.45c0-1.17.22-2.31 1.68-2.31 1.43 0 1.45 1.34 1.45 2.39V18.5h2.54z"/></svg></a><a href="https://x.com/uk_chike" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.53 3h3.07l-6.7 7.66L21.75 21h-6.17l-4.83-6.31L5.22 21H2.14l7.16-8.19L1.5 3h6.33l4.36 5.77L17.53 3zm-1.08 16.17h1.7L7.63 4.74H5.8l10.65 14.43z"/></svg></a><a href="https://wa.me/2348026686328" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.42 5.82c0 4.54-3.7 8.24-8.25 8.24a8.23 8.23 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.25 8.24-8.25zm-3.06 4.4c-.14 0-.38.05-.58.27-.2.22-.76.75-.76 1.82 0 1.07.78 2.11.89 2.25.11.14 1.54 2.35 3.73 3.3.52.22.93.36 1.25.46.52.17 1 .14 1.37.09.42-.06 1.28-.52 1.46-1.03.18-.5.18-.94.13-1.03-.05-.09-.2-.14-.42-.25-.22-.11-1.28-.63-1.48-.7-.2-.07-.34-.11-.49.11-.14.22-.56.7-.69.85-.13.14-.25.16-.47.05-.22-.11-.92-.34-1.76-1.08-.65-.58-1.09-1.3-1.22-1.52-.13-.22-.01-.34.1-.45.1-.1.22-.25.33-.38.11-.13.14-.22.22-.36.07-.14.04-.27-.02-.38-.05-.11-.49-1.18-.67-1.61-.18-.43-.36-.37-.49-.38-.13-.01-.27-.01-.42-.01z"/></svg></a><a href="mailto:hello@prolion.ng" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a></div>
+    </div>
+    <div class="ftcol"><h4>Services</h4><ul><li><a href="#services">Bookkeeping</a></li><li><a href="#services">Tax returns</a></li><li><a href="#services">Management accounts</a></li><li><a href="#services">Financial modelling</a></li><li><a href="#services">Data &amp; analytics</a></li></ul></div>
+    <div class="ftcol"><h4>Software</h4><ul><li><a href="https://credotax-7c7n.vercel.app/" target="_blank" rel="noopener noreferrer">CredoTax ↗</a></li><li><a href="https://nexus-app-ivory-eta.vercel.app/" target="_blank" rel="noopener noreferrer">NEXUS ↗</a></li></ul></div>
+    <div class="ftcol"><h4>Company</h4><ul><li><a href="#about">About</a></li><li><a href="#approach">How we work</a></li><li><a href="https://www.linkedin.com/in/ukchike/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li><li><a href="#contact">Contact</a></li></ul></div>
+  </div>
+  <div class="ftbot"><span>© <span id="yr">2026</span> Prolion Integrated Services · CAC-registered</span><span>Built in Lagos · Numbers, handled.</span></div>
+</div></footer>
+
+<script>
+(function(){"use strict";
+  var hdr=document.querySelector(".hdr");var os=function(){hdr.classList.toggle("scrolled",scrollY>8)};addEventListener("scroll",os,{passive:true});os();
+  var tgl=document.getElementById("tgl"),nav=document.getElementById("nav"),mob=document.getElementById("mob");
+  tgl.addEventListener("click",function(){var o=nav.classList.toggle("open");tgl.setAttribute("aria-expanded",o)});
+  mob.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){nav.classList.remove("open");tgl.setAttribute("aria-expanded","false")})});
+  var rm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(!rm&&"IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12,rootMargin:"0px 0px -40px 0px"});document.querySelectorAll(".reveal").forEach(function(e){io.observe(e)});}else{document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("in")})}
+  document.getElementById("yr").textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
