@@ -40,27 +40,34 @@ vercel --prod            # promote to production
 3. HTTPS is provisioned automatically.
 
 ## Before you go live — quick checklist
-- [ ] Replace the email `hello@prolion.ng` if it isn't live yet (search the file for it).
-- [ ] **Activate the consultation form** (see below) — it won't send until you add a form ID.
+- [x] Email set to **prolionltd@gmail.com**.
+- [x] Consultation form wired to Formspree (`https://formspree.io/f/xwvdokey`).
+- [ ] Confirm the first test submission lands in the Formspree inbox / prolionltd@gmail.com.
 - [ ] Confirm WhatsApp / LinkedIn / X / CredoTax / NEXUS links open correctly.
-- [ ] (Optional) Add an `og:image` (1200×630 PNG) for richer link previews on social.
+- [x] RC number (9642532) and TIN added to the footer.
+- [x] Branded **og-image.png** added (1200×630) with meta tags for rich link previews.
+
+### og:image note
+The page references the image as `/og-image.png` (root-relative), which works on Vercel as-is.
+If a platform's preview ever fails to show it, set an **absolute** URL once your final domain is
+live — edit the two `og-image.png` references in `index.html` to e.g.
+`https://prolion.ng/og-image.png`. Test previews with the LinkedIn Post Inspector,
+the X Card Validator, or **https://www.opengraph.xyz**.
 
 ---
 
-## Activate the lead-capture form (2 minutes, free)
+## The lead-capture form is already active
 
-The "Request a consultation" form is wired for **Formspree**, which emails you each
-submission — no backend or database needed.
+The "Request a consultation" form posts to **Formspree** at `https://formspree.io/f/xwvdokey`
+and emails each submission — no backend needed.
 
-1. Go to **https://formspree.io** and create a free account.
-2. Create a new form; point its notifications to **hello@prolion.ng** (or your inbox).
-3. Formspree gives you an endpoint like `https://formspree.io/f/abcdwxyz`.
-4. Open `index.html`, find `action="https://formspree.io/f/YOUR_FORM_ID"`, and replace
-   `YOUR_FORM_ID` with your real ID (e.g. `abcdwxyz`).
-5. Redeploy. Submit a test message — it should land in your inbox, and the visitor
-   sees an on-page "Thank you" confirmation.
+**One-time step on Formspree's side:** the very first submission to a new form triggers a
+confirmation email from Formspree asking you to verify the form. Send one test message from the
+live site, then click the verify link in the email Formspree sends to the form's owner address.
+After that, all submissions flow through automatically and the visitor sees the on-page
+"Thank you" confirmation.
 
 Notes:
-- Until you swap the ID, the form shows a friendly "endpoint not set" message instead of failing silently.
 - A hidden honeypot field is already included to reduce spam.
 - The free tier covers ~50 submissions/month; paid tiers raise that if needed.
+- To change the destination inbox later, edit the form settings in your Formspree dashboard.
