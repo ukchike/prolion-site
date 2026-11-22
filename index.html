@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Prolion Ltd — Bookkeeping, Tax, Reporting & Advisory · Lagos</title>
-<meta name="description" content="Prolion Ltd is a Lagos finance practice: bookkeeping, tax returns, management accounts, financial statements, software implementation, financial modelling and business analytics for Nigerian businesses. RC 9642532." />
-<meta property="og:title" content="Prolion Ltd — Finance, Tax & Reporting · Lagos" />
-<meta property="og:description" content="A complete finance and tax function for Nigerian business — from first ledger to board-ready report. Founder: Kingsley Uzoka, FMVA®, BIDA®." />
+<title>Prolion Ltd — Finance, Tax, Data & Technology · Lagos</title>
+<meta name="description" content="Prolion Ltd is a Lagos firm for finance, tax, data and technology: bookkeeping, tax returns, financial statements, modelling, analytics, business advisory and the software we build, including CredoTax, Prixum, BankBalance and Finance Flow. RC 9642532." />
+<meta property="og:title" content="Prolion Ltd — Finance, Tax, Data & Technology · Lagos" />
+<meta property="og:description" content="Finance, tax, data and technology for Nigerian business — from the first ledger to the software that runs it. Founder: Kingsley Uzoka, FMVA®, BIDA®." />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Prolion Ltd" />
 <meta property="og:image" content="/og-image.png" />
@@ -14,8 +14,8 @@
 <meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="Prolion Ltd — bookkeeping, tax & reporting, handled." />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Prolion Ltd — Finance, Tax & Reporting · Lagos" />
-<meta name="twitter:description" content="A complete finance and tax function for Nigerian business — bookkeeping, tax, reporting, modelling and analytics." />
+<meta name="twitter:title" content="Prolion Ltd — Finance, Tax, Data & Technology · Lagos" />
+<meta name="twitter:description" content="Finance, tax, data and technology for Nigerian business — and the products we build to run it." />
 <meta name="twitter:image" content="/og-image.png" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3Crect%20width='40'%20height='40'%20rx='9'%20fill='%230B1F18'/%3E%3Cpath%20d='M13%2028V12h7.2c3.4%200%205.6%202%205.6%205.1%200%203.2-2.2%205.2-5.7%205.2H17.4V28H13Z'%20fill='%23D4AC5C'/%3E%3Cpath%20d='M17.4%2018.7h2.4c1.2%200%201.9-.6%201.9-1.6%200-1-.7-1.6-1.9-1.6h-2.4v3.2Z'%20fill='%230B1F18'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,8 +33,8 @@
   --paper:#E7E4DC; --paper-2:#EEEBE4; --paper-3:#F6F4EE;
   --ink:#0B1F18; --ink-2:#122B21; --ink-3:#1A3A2D;
   --green:#1E5741; --green-soft:#2E6B52;
-  --gold:#B08A3E; --gold-hi:#D4AC5C; --gold-dim:rgba(176,138,62,.35);
-  --t-ink:#14231C; --t-mute:#4F5D55; --t-faint:#84908A;
+  --gold:#B08A3E; --gold-ink:#735A22; --t-faint-dk:#8FA399; --gold-hi:#D4AC5C; --gold-dim:rgba(176,138,62,.35);
+  --t-ink:#14231C; --t-mute:#4F5D55; --t-faint:#566560;
   --t-paper:#E9E6DC; --t-dim:#A8BAAF;
   --rule:rgba(11,31,24,.16); --rule-soft:rgba(11,31,24,.09);
   --rule-dk:rgba(233,230,220,.13); --rule-dk-2:rgba(233,230,220,.22);
@@ -63,9 +63,10 @@ h2{font-size:var(--h2)}
 .lead{font-size:var(--lead);color:var(--t-mute);line-height:1.55;max-width:52ch}
 
 /* eyebrow = a "posting reference" */
-.ref{font-family:"Spline Sans Mono";font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:.65rem}
+.ref{font-family:"Spline Sans Mono";font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-ink);display:inline-flex;align-items:center;gap:.65rem}
 .ref::before{content:"";width:2.2rem;height:1px;background:var(--gold);opacity:.65}
 .dark .ref{color:var(--gold-hi)}
+.hero .ref{color:var(--gold-hi)}
 
 /* buttons */
 .btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:600;font-size:.95rem;letter-spacing:.01em;
@@ -139,18 +140,18 @@ h2{font-size:var(--h2)}
 .j-head .jd{width:9px;height:9px;border-radius:50%;background:var(--gold-hi);box-shadow:0 0 0 4px rgba(212,172,92,.16)}
 .j-body{padding:1.15rem 1.35rem .4rem}
 .j-cols{display:grid;grid-template-columns:1fr auto auto;gap:.4rem 1.6rem;font-family:"Spline Sans Mono";font-size:.64rem;
-  letter-spacing:.1em;text-transform:uppercase;color:var(--t-faint);padding-bottom:.55rem;border-bottom:1px solid var(--rule-dk)}
+  letter-spacing:.1em;text-transform:uppercase;color:var(--t-faint-dk);padding-bottom:.55rem;border-bottom:1px solid var(--rule-dk)}
 .j-line{display:grid;grid-template-columns:1fr auto auto;gap:.4rem 1.6rem;align-items:baseline;
   padding:.68rem 0;border-bottom:1px dashed var(--rule-dk);font-size:.92rem}
 .j-line .acct{color:var(--t-paper)}
-.j-line .acct i{font-style:normal;color:var(--t-faint);font-family:"Spline Sans Mono";font-size:.72rem;margin-right:.6rem}
+.j-line .acct i{font-style:normal;color:var(--t-faint-dk);font-family:"Spline Sans Mono";font-size:.72rem;margin-right:.6rem}
 .j-line .dr,.j-line .cr{font-family:"Spline Sans Mono";font-size:.85rem;color:var(--t-dim);min-width:5.2ch;text-align:right}
 .j-line .dr{color:var(--gold-hi)}
 .j-total{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.35rem;border-top:1.5px solid var(--gold);margin-top:.4rem}
 .j-total .bl{font-family:"Gloock";font-size:1.06rem;color:#fff}
 .j-total .bv{font-family:"Spline Sans Mono";font-size:.8rem;color:var(--gold-hi);display:inline-flex;align-items:center;gap:.5rem}
 .j-total .bv .tick{width:18px;height:18px;border-radius:50%;background:rgba(212,172,92,.15);display:grid;place-items:center}
-.j-foot{padding:.75rem 1.35rem 1.05rem;font-family:"Spline Sans Mono";font-size:.66rem;letter-spacing:.06em;color:var(--t-faint)}
+.j-foot{padding:.75rem 1.35rem 1.05rem;font-family:"Spline Sans Mono";font-size:.66rem;letter-spacing:.06em;color:var(--t-faint-dk)}
 /* posting animation */
 .j-line{opacity:0;transform:translateY(8px)}
 .posted .j-line{animation:post .55s var(--ease) forwards}
@@ -187,7 +188,7 @@ h2{font-size:var(--h2)}
 .acct-row{display:grid;grid-template-columns:110px 1fr 1.15fr;gap:1.2rem 2.2rem;align-items:baseline;
   padding:1.45rem 0;border-bottom:1px solid var(--rule);transition:background .25s var(--ease)}
 .acct-row:hover{background:rgba(11,31,24,.03)}
-.acct-row .code{font-family:"Spline Sans Mono";font-size:.86rem;font-weight:600;color:var(--gold);letter-spacing:.06em}
+.acct-row .code{font-family:"Spline Sans Mono";font-size:.86rem;font-weight:600;color:var(--gold-ink);letter-spacing:.06em}
 .acct-row h3{font-size:clamp(1.25rem,1.05rem + .9vw,1.7rem)}
 .acct-row p{font-size:.94rem;color:var(--t-mute);max-width:52ch}
 .coa-note{margin-top:1.4rem;font-family:"Spline Sans Mono";font-size:.7rem;letter-spacing:.08em;color:var(--t-faint)}
@@ -238,7 +239,14 @@ h2{font-size:var(--h2)}
 .stat.live{background:rgba(30,87,65,.12);color:var(--green)}
 .stat.build{background:rgba(176,138,62,.14);color:#7d5f22}
 .vl-off{font-family:"Spline Sans Mono";font-size:.76rem;color:var(--t-faint);border-bottom:1px dashed var(--rule)}
-.soon{font-family:"Spline Sans Mono";font-size:.84rem;color:var(--t-faint)}
+.soon{font-family:"Spline Sans Mono";font-size:.84rem;color:var(--t-faint-dk)}
+.app .vl{min-height:44px;display:inline-flex;align-items:center;padding:.5rem 0;font-size:.86rem;border-bottom-width:1px}
+.next{margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--rule-dk)}
+.next-h{font-family:"Spline Sans Mono";font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-hi);display:block;margin-bottom:.9rem}
+.next ol{list-style:none;counter-reset:n;display:flex;flex-direction:column;gap:.75rem}
+.next li{counter-increment:n;position:relative;padding-left:2.1rem;font-size:.92rem;color:var(--t-dim)}
+.next li::before{content:counter(n);position:absolute;left:0;top:0;font-family:"Spline Sans Mono";font-size:.78rem;color:var(--gold-hi);width:1.5rem}
+.next li b{color:#fff;font-weight:600}
 @media(max-width:700px){.apps{grid-template-columns:1fr}}
 .app b{font-family:"Gloock";font-size:1.25rem;font-weight:400}
 .app p{font-size:.88rem;color:var(--t-mute);margin-bottom:.9rem;max-width:34ch}
@@ -318,6 +326,7 @@ h2{font-size:var(--h2)}
 .ft{background:#07160F;color:var(--t-dim);padding-block:3.2rem 2rem;border-top:1px solid var(--rule-dk)}
 .ftgrid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:2.2rem}
 .ft .brand .bt b{color:#fff}
+.ft .brand .bt small{color:var(--t-faint-dk)}
 .ftabout{font-size:.88rem;max-width:34ch;margin-top:1rem}
 .ftsoc{display:flex;gap:.55rem;margin-top:1.25rem}
 .ftsoc a{width:38px;height:38px;border-radius:4px;border:1px solid var(--rule-dk-2);display:grid;place-items:center;color:var(--t-dim);transition:.2s}
@@ -328,7 +337,7 @@ h2{font-size:var(--h2)}
 .ftcol a{font-size:.9rem}
 .ftcol a:hover{color:var(--gold-hi)}
 .ftbot{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;margin-top:2.8rem;padding-top:1.6rem;
-  border-top:1px solid var(--rule-dk);font-family:"Spline Sans Mono";font-size:.74rem;color:var(--t-faint)}
+  border-top:1px solid var(--rule-dk);font-family:"Spline Sans Mono";font-size:.74rem;color:var(--t-faint-dk)}
 
 /* reveal on scroll */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
@@ -407,16 +416,16 @@ h2{font-size:var(--h2)}
   <div class="wrap hgrid">
     <div>
       <span class="ref">Lagos, Nigeria · Est. 2026 · RC 9642532</span>
-      <h1>Every naira, <em>accounted for.</em></h1>
-      <p class="lead">Prolion Ltd runs the finance and tax function for Nigerian businesses — bookkeeping, returns, management accounts, modelling and analytics — kept to the standard your bank, your board and the NRS expect.</p>
+      <h1>Numbers, compliance and <em>software</em> for Nigerian business.</h1>
+      <p class="lead">We keep your books, file your taxes and model your future. We also build the data systems and software that keep a business running, including our own products: CredoTax, Prixum, BankBalance and Finance Flow.</p>
       <div class="hact">
         <a href="#contact" class="btn btn-gold">Request a consultation <span class="arr">→</span></a>
         <a href="#services" class="btn btn-line-dk">View the chart of services</a>
       </div>
       <div class="hfacts">
         <div class="hf"><b>10+</b><span>Years in practice</span></div>
-        <div class="hf"><b>9</b><span>Service lines</span></div>
-        <div class="hf"><b>IFRS</b><span>Every report</span></div>
+        <div class="hf"><b>10</b><span>Service lines</span></div>
+        <div class="hf"><b>4</b><span>Products built</span></div>
       </div>
     </div>
 
@@ -455,8 +464,8 @@ h2{font-size:var(--h2)}
   <div class="wrap">
     <div class="shead">
       <span class="ref">The chart of services</span>
-      <h2>Nine accounts. One accountable practice.</h2>
-      <p class="lead">Structured the way an accountant structures everything — as a chart of accounts. Engage a single line or the whole ledger; the standard is the same.</p>
+      <h2>Ten services. One practice you can hold to account.</h2>
+      <p class="lead">Ten service lines, numbered like a chart of accounts. Take one, or the whole ledger: from the books, to the data behind them, to the software that runs the business.</p>
     </div>
     <div class="coa">
       <div class="acct-row rv"><span class="code">100</span><h3>Bookkeeping</h3><p>Clean, current records kept month to month — so you always know where the money is, and audit season holds no surprises.</p></div>
@@ -467,7 +476,8 @@ h2{font-size:var(--h2)}
       <div class="acct-row rv"><span class="code">600</span><h3>Financial modelling</h3><p>Forecasts, budgets, valuations and scenario models that stand up to scrutiny — for decisions, funding rounds and grant bids.</p></div>
       <div class="acct-row rv"><span class="code">700</span><h3>Data &amp; business analytics</h3><p>Dashboards and analysis that turn raw transactions into the few numbers that actually drive your decisions.</p></div>
       <div class="acct-row rv"><span class="code">800</span><h3>Audit &amp; tax authority support</h3><p>Pre-audit workbooks, objection letters and reconciliations built to withstand an NRS review when it comes.</p></div>
-      <div class="acct-row rv"><span class="code">900</span><h3>Advisory retainers</h3><p>Your own finance team on call, every month — the full function without the cost of hiring one.</p></div>
+      <div class="acct-row rv"><span class="code">900</span><h3>Business advisory &amp; retainers</h3><p>Ongoing finance, strategy and operations support. A fractional finance and advisory function, without the cost of a full-time hire.</p></div>
+      <div class="acct-row rv"><span class="code">1000</span><h3>Software, automation &amp; products</h3><p>Custom finance tools, workflow automation and data systems, from one dashboard to a full product. We have shipped our own: CredoTax, Prixum, BankBalance and Finance Flow.</p></div>
     </div>
     <p class="coa-note">// Numbered like a chart of accounts — because that is how we keep order.</p>
   </div>
@@ -475,8 +485,8 @@ h2{font-size:var(--h2)}
 
 <!-- ═══ SECTORS ═══ -->
 <div class="sectors"><div class="wrap">
-  <span class="lbl">We keep books for</span>
-  <span class="s">SMEs</span><span class="d"></span><span class="s">Construction</span><span class="d"></span><span class="s">Manufacturing</span><span class="d"></span><span class="s">Energy</span><span class="d"></span><span class="s">Services</span><span class="d"></span><span class="s">The informal sector</span>
+  <span class="lbl">We work with</span>
+  <span class="s">SMEs</span><span class="d"></span><span class="s">Construction</span><span class="d"></span><span class="s">Manufacturing</span><span class="d"></span><span class="s">Energy</span><span class="d"></span><span class="s">Services</span><span class="d"></span><span class="s">Technology &amp; startups</span><span class="d"></span><span class="s">The informal sector</span>
 </div></div>
 
 <!-- ═══ METHOD ═══ -->
@@ -504,7 +514,7 @@ h2{font-size:var(--h2)}
     <div class="shead">
       <span class="ref">Products</span>
       <h2>Four products, built in-house.</h2>
-      <p class="lead">When the tools we needed didn't exist for the Nigerian market, we built them. Each one is designed around how Nigerian businesses actually keep their books and meet their obligations.</p>
+      <p class="lead">When the tools we needed didn't exist for the Nigerian market, we built them. Software is part of the practice. Each product is built around how Nigerian businesses keep their books, meet their obligations and manage their money.</p>
       <span class="extn">↗ Live web products open in a new tab</span>
     </div>
     <div class="apps">
@@ -542,7 +552,7 @@ h2{font-size:var(--h2)}
         <span class="vl vl-off">Launching soon</span>
       </article>
       <article class="app ff rv">
-        <div class="ah"><span class="g">Ff</span><div><b>Finance Flow</b><span class="stat live">Android · v1.0</span></div></div>
+        <div class="ah"><span class="g">Ff</span><div><b>Finance Flow</b><span class="stat build">Android · v1.0 build</span></div></div>
         <p class="tag">Your money, every account, one view.</p>
         <p>A personal and small-business finance tracker for Android. Track accounts and transactions, set budgets, follow subscriptions and export your records.</p>
         <ul class="feat">
@@ -550,7 +560,7 @@ h2{font-size:var(--h2)}
           <li>Budgets and subscription tracking</li>
           <li>Import CSV statements, export your data</li>
         </ul>
-        <span class="vl vl-off">Android app</span>
+        <span class="vl vl-off">Play Store release coming soon</span>
       </article>
     </div>
   </div>
@@ -583,7 +593,7 @@ h2{font-size:var(--h2)}
   <div class="wrap c-grid">
     <div>
       <span class="ref">Open an engagement</span>
-      <h2>Ready to hand the numbers to someone you trust?</h2>
+      <h2>Let's get your numbers, compliance and systems in order.</h2>
       <p class="lead">Tell us a little about your business and what you need. We reply — usually within one business day — with what needs doing and what it costs. No pressure, no spam.</p>
       <div class="chans">
         <a href="mailto:prolionltd@gmail.com">✉ prolionltd@gmail.com</a>
@@ -592,6 +602,7 @@ h2{font-size:var(--h2)}
         <a href="https://x.com/uk_chike" target="_blank" rel="noopener noreferrer" title="Opens in a new tab">𝕏 @uk_chike ↗</a>
         <span>⌖ Lagos, Nigeria · RC 9642532</span>
       </div>
+      <div class="next"><span class="next-h">What happens next</span><ol><li><b>We review your enquiry.</b></li><li><b>We reply within one business day</b> with next steps and an indicative cost.</li><li><b>A short call or WhatsApp chat</b> to agree scope. No obligation.</li></ol></div>
     </div>
     <div class="form-card rv">
       <div id="formWrap">
@@ -607,7 +618,7 @@ h2{font-size:var(--h2)}
               <option value="" selected>Select a service…</option>
               <option>Bookkeeping</option><option>Tax returns &amp; compliance</option><option>Management accounts &amp; reporting</option>
               <option>Financial statements</option><option>Accounting software implementation</option><option>Financial modelling</option>
-              <option>Data &amp; business analytics</option><option>Audit &amp; tax authority support</option><option>Advisory retainer</option><option>Something else</option>
+              <option>Data &amp; business analytics</option><option>Audit &amp; tax authority support</option><option>Business advisory &amp; retainers</option><option>Software, automation &amp; products</option><option>Something else</option>
             </select>
           </div>
           <div class="fld full"><label for="message">Message <span class="req">*</span></label>
@@ -636,7 +647,7 @@ h2{font-size:var(--h2)}
         <svg class="mk" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="8" fill="#122B21"/><rect x="1.5" y="1.5" width="37" height="37" rx="7.5" stroke="#B08A3E" stroke-opacity="0.55"/><path d="M13 28V12h7.2c3.4 0 5.6 2 5.6 5.1 0 3.2-2.2 5.2-5.7 5.2H17.4V28H13Z" fill="#D4AC5C"/><path d="M17.4 18.7h2.4c1.2 0 1.9-.6 1.9-1.6 0-1-.7-1.6-1.9-1.6h-2.4v3.2Z" fill="#122B21"/></svg>
         <span class="bt"><b>Prolion</b><small>Ltd · RC 9642532</small></span>
       </a>
-      <p class="ftabout">Bookkeeping, tax, reporting, modelling and analytics for Nigerian businesses — plus the software to make it simpler.</p>
+      <p class="ftabout">Finance, tax, data and technology for Nigerian businesses — plus the products we build to run them.</p>
       <div class="ftsoc">
         <a href="https://www.linkedin.com/in/ukchike/" target="_blank" rel="noopener noreferrer" title="Opens in a new tab" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 9.5H5.67V18.5H8.34V9.5zM7 5.75a1.55 1.55 0 1 0 0 3.1 1.55 1.55 0 0 0 0-3.1zM18.34 18.5V13.6c0-2.55-1.36-3.74-3.18-3.74a2.74 2.74 0 0 0-2.48 1.36h-.04V9.5H10v9h2.67v-4.45c0-1.17.22-2.31 1.68-2.31 1.43 0 1.45 1.34 1.45 2.39V18.5h2.54z"/></svg></a>
         <a href="https://x.com/uk_chike" target="_blank" rel="noopener noreferrer" title="Opens in a new tab" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.53 3h3.07l-6.7 7.66L21.75 21h-6.17l-4.83-6.31L5.22 21H2.14l7.16-8.19L1.5 3h6.33l4.36 5.77L17.53 3zm-1.08 16.17h1.7L7.63 4.74H5.8l10.65 14.43z"/></svg></a>
@@ -661,7 +672,7 @@ h2{font-size:var(--h2)}
   </div>
   <div class="ftbot">
     <span>© <span id="yr">2026</span> Prolion Ltd · RC 9642532</span>
-    <span>Built in Lagos · Every naira, accounted for.</span>
+    <span>Built in Lagos · Numbers, compliance, software.</span>
   </div>
 </div></footer>
 
