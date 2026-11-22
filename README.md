@@ -1,4 +1,4 @@
-# Prolion Integrated Services — Website
+# Prolion Ltd — Website
 
 A single-page static marketing site (one `index.html`, no build step, no dependencies).
 Fonts load from Google Fonts; the favicon is inline. It is ready to deploy to Vercel as-is.
